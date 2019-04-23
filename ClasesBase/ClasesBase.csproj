@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>fd3bdf2e-0d64-499f-88b1-8e33e848d502</ProjectGuid>
+    <ProjectGuid>{23A4209F-3CB3-4C68-A2B7-8837DD7928DC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ClasesBase</RootNamespace>
@@ -41,7 +41,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Cliente.cs" />
+    <Compile Include="Cuota.cs" />
+    <Compile Include="Destino.cs" />
+    <Compile Include="Destinon.cs" />
+    <Compile Include="Pago.cs" />
+    <Compile Include="Periodo.cs" />
+    <Compile Include="Prestamo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rol.cs" />
+    <Compile Include="Usuario.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MiDiagramaDeClases.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
