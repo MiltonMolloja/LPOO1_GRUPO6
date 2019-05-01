@@ -30,3 +30,15 @@ D:\Documents\01 - Projects .Net\Grupo\LPOO1_GRUPO6\Vistas\obj\x86\Debug\Vistas.P
 D:\Documents\01 - Projects .Net\Grupo\LPOO1_GRUPO6\Vistas\obj\x86\Debug\Vistas.csproj.GenerateResource.Cache
 D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\Vistas\obj\x86\Debug\Vistas.exe
 D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\Vistas\obj\x86\Debug\Vistas.pdb
+D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\Vistas\bin\Debug\prestamos.mdf
+D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\Vistas\bin\Debug\prestamos_log.ldf
+D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\Vistas\bin\Debug\Vistas.exe.config
+D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\Vistas\bin\Debug\Vistas.exe
+D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\Vistas\bin\Debug\Vistas.pdb
+D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\Vistas\bin\Debug\ClasesBase.dll
+D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\Vistas\bin\Debug\ClasesBase.pdb
+D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\Vistas\obj\x86\Debug\Vistas.csprojResolveAssemblyReference.cache
+D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\Vistas\obj\x86\Debug\Vistas.FormMain.resources
+D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\Vistas\obj\x86\Debug\Vistas.FrmLogin.resources
+D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\Vistas\obj\x86\Debug\Vistas.Properties.Resources.resources
+D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\Vistas\obj\x86\Debug\Vistas.csproj.GenerateResource.Cache

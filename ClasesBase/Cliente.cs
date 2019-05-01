@@ -7,9 +7,9 @@ namespace ClasesBase
 {
     public class Cliente
     {
-        private int cli_Dni = 0;
+        private string cli_Dni;
 
-        public int Cli_Dni
+        public string Cli_Dni
         {
             get { return cli_Dni; }
             set { cli_Dni = value; }

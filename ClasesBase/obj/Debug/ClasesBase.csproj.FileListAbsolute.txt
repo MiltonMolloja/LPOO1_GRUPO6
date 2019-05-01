@@ -12,3 +12,8 @@ D:\Documents\01 - Projects .Net\Grupo\LPOO1_GRUPO6\ClasesBase\bin\Debug\ClasesBa
 D:\Documents\01 - Projects .Net\Grupo\LPOO1_GRUPO6\ClasesBase\obj\Debug\ClasesBase.csprojResolveAssemblyReference.cache
 D:\Documents\01 - Projects .Net\Grupo\LPOO1_GRUPO6\ClasesBase\obj\Debug\ClasesBase.dll
 D:\Documents\01 - Projects .Net\Grupo\LPOO1_GRUPO6\ClasesBase\obj\Debug\ClasesBase.pdb
+D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\ClasesBase\bin\Debug\ClasesBase.dll
+D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\ClasesBase\bin\Debug\ClasesBase.pdb
+D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\ClasesBase\obj\Debug\ClasesBase.csprojResolveAssemblyReference.cache
+D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\ClasesBase\obj\Debug\ClasesBase.dll
+D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\ClasesBase\obj\Debug\ClasesBase.pdb
