@@ -11,9 +11,17 @@ namespace Vistas
 {
     public partial class FormMain : Form
     {
+        
+
         public FormMain()
         {
             InitializeComponent();
+        }
+
+        private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormUsuario oFrmUsuario = new FormUsuario();
+            oFrmUsuario.Show();
         }
     }
 }

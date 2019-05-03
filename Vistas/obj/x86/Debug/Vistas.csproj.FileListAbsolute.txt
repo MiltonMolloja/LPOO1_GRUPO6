@@ -42,3 +42,4 @@ D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\Vistas\obj\x86\Debug\Vistas.FormMa
 D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\Vistas\obj\x86\Debug\Vistas.FrmLogin.resources
 D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\Vistas\obj\x86\Debug\Vistas.Properties.Resources.resources
 D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\Vistas\obj\x86\Debug\Vistas.csproj.GenerateResource.Cache
+D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\Vistas\obj\x86\Debug\Vistas.FormUsuario.resources

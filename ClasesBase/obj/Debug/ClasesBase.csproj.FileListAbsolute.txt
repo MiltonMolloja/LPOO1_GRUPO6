@@ -17,3 +17,4 @@ D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\ClasesBase\bin\Debug\ClasesBase.pd
 D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\ClasesBase\obj\Debug\ClasesBase.csprojResolveAssemblyReference.cache
 D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\ClasesBase\obj\Debug\ClasesBase.dll
 D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\ClasesBase\obj\Debug\ClasesBase.pdb
+D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\ClasesBase\bin\Debug\ClasesBase.dll.config

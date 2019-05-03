@@ -1,0 +1,5 @@
+D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\ClasesBase\bin\Release\ClasesBase.dll.config
+D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\ClasesBase\bin\Release\ClasesBase.dll
+D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\ClasesBase\bin\Release\ClasesBase.pdb
+D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\ClasesBase\obj\Release\ClasesBase.dll
+D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\ClasesBase\obj\Release\ClasesBase.pdb
