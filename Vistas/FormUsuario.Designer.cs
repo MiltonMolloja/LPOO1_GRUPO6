@@ -57,6 +57,7 @@
             this.datosDeUsuario.TabIndex = 0;
             this.datosDeUsuario.TabStop = false;
             this.datosDeUsuario.Text = "Datos de Usuario";
+            this.datosDeUsuario.Enter += new System.EventHandler(this.datosDeUsuario_Enter);
             // 
             // textBoxApellidoNombre
             // 
@@ -78,6 +79,7 @@
             this.textBoxNombreDeUsuario.Name = "textBoxNombreDeUsuario";
             this.textBoxNombreDeUsuario.Size = new System.Drawing.Size(199, 20);
             this.textBoxNombreDeUsuario.TabIndex = 5;
+            this.textBoxNombreDeUsuario.TextChanged += new System.EventHandler(this.textBoxNombreDeUsuario_TextChanged);
             // 
             // labelApellidoNombre
             // 
@@ -123,7 +125,6 @@
             this.comboBoxRol.Size = new System.Drawing.Size(199, 21);
             this.comboBoxRol.TabIndex = 0;
             this.comboBoxRol.SelectedIndexChanged += new System.EventHandler(this.comboBoxRol_SelectedIndexChanged);
-          //this.comboBoxRol.SelectedIndexChanged += new System.EventHandler(this.comboBoxRol_SelectedIndexChanged);
             // 
             // buttonGuardar
             // 
@@ -144,6 +145,7 @@
             this.Controls.Add(this.datosDeUsuario);
             this.Name = "FormUsuario";
             this.Text = "FormUsuario";
+            this.Load += new System.EventHandler(this.FormUsuario_Load);
             this.datosDeUsuario.ResumeLayout(false);
             this.datosDeUsuario.PerformLayout();
             this.ResumeLayout(false);

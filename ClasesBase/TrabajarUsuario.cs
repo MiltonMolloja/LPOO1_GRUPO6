@@ -11,6 +11,8 @@ namespace ClasesBase
     public class TrabajarUsuario
     {
         public static DataTable list_roles() {
+
+/**            
             SqlConnection cnn = new SqlConnection(ClasesBase.Properties.Settings.Default.prestamoConnectionString);
 
             SqlCommand cmd = new SqlCommand();
@@ -25,6 +27,10 @@ namespace ClasesBase
             DataTable dt = new DataTable();
             da.Fill(dt);
 
+            return dt;
+ * 
+ * */
+            DataTable dt = new DataTable();
             return dt;
         } 
     }

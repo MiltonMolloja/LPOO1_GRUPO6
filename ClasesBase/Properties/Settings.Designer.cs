@@ -34,5 +34,17 @@ namespace ClasesBase.Properties {
                 return ((string)(this["prestamoConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\SQLEXPRESS;AttachDbFilename=\"D:\\Documents\\01 - Proyectos From\\LPOO1" +
+            "_GRUPO6\\prestamosDB.mdf\";Integrated Security=True;Connect Timeout=30;User Instan" +
+            "ce=True")]
+        public string prestamoConnectionStringDB {
+            get {
+                return ((string)(this["prestamoConnectionStringDB"]));
+            }
+        }
     }
 }
