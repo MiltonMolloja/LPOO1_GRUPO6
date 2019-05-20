@@ -13,3 +13,5 @@ D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\Vistas\bin\Release\ClasesBase.dll
 D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\Vistas\bin\Release\ClasesBase.pdb
 D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\Vistas\obj\x86\Release\Vistas.exe
 D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\Vistas\obj\x86\Release\Vistas.pdb
+D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\Vistas\obj\x86\Release\Vistas.FormAltaCliente.resources
+D:\Documents\01 - Proyectos From\LPOO1_GRUPO6\Vistas\obj\x86\Release\Vistas.FormLIstaCliente.resources

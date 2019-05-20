@@ -9,8 +9,6 @@ using System.Text;
 using System.Windows.Forms;
 using ClasesBase;
 
-using ClasesBase;
-
 namespace Vistas
 {
     public partial class FormUsuario : Form

@@ -61,6 +61,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormAltaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAltaCliente.Designer.cs">
+      <DependentUpon>FormAltaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLIstaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLIstaCliente.Designer.cs">
+      <DependentUpon>FormLIstaCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +98,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAltaCliente.resx">
+      <DependentUpon>FormAltaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLIstaCliente.resx">
+      <DependentUpon>FormLIstaCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
