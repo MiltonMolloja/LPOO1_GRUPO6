@@ -42,9 +42,14 @@ namespace ClasesBase
             get { return rol_Codigo; }
             set { rol_Codigo = value; }
         }
-        
-        
 
+
+
+
+        public Usuario()
+        {
+         
+        }
 
         public Usuario(string userName, string password)
         {

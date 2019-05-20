@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using ClasesBase;
 
 using ClasesBase;
 
@@ -21,24 +22,46 @@ namespace Vistas
 
         private void buttonGuardar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(labelApellidoNombre.Text);
+            Usuario oUsuario = new Usuario();
+
+            oUsuario.Rol_Codigo = (string) comboBoxRol.SelectedValue;
+            //oUsuario.Rol_Codigo = "Adm";
+            oUsuario.Usu_NombreUsuario = textBoxApellidoNombre.Text;
+            oUsuario.Usu_Contraseña = textBoxContraseña.Text;
+            oUsuario.Usu_ApellidoNombre = textBoxApellidoNombre.Text;
+
+            TrabajarUsuario.insert_usuario(oUsuario);
+
+            load_Usuarios();
         }
 
         private void FrmUsuario_Load() {
             load_combo_roles();
+            load_Usuarios();
         }
 
         private void load_combo_roles() {
-            comboBoxRol.DisplayMember = "rol_Descripcion";
-            comboBoxRol.ValueMember = "rol_Codigo";
+
+            comboBoxRol.DisplayMember = "rol_descripcion";
+            comboBoxRol.ValueMember = "rol_codigo";
             comboBoxRol.DataSource = TrabajarUsuario.list_roles();
+        }
+
+        private void load_Usuarios()
+        {
+            dgvUsuarios.DataSource = TrabajarUsuario.list_usuarios();
         }
 
         private void comboBoxRol_SelectedIndexChanged(object sender, EventArgs e)
         {
-            textBoxNombreDeUsuario.Text = comboBoxRol.SelectedItem.ToString();
-            textBoxNombreDeUsuario.Refresh();
-            textBoxContraseña.Text = comboBoxRol.SelectedItem.
+            //textBoxNombreDeUsuario.Text = comboBoxRol.SelectedItem.ToString();
+            //textBoxNombreDeUsuario.Refresh();
+            //textBoxContraseña.Text =  comboBoxRol.SelectedItem.ToString();
+            
+            //txtUsr_Nombre.Text = dgwUsuarios.CurrentRow.Cells["Nombre"].Value.ToString();
+            //txtUsr_Email.Text = dgwUsuarios.CurrentRow.Cells["Email"].Value.ToString();
+            //txtUsr_UserName.Text = dgwUsuarios.CurrentRow.Cells["Usuario"].Value.ToString();
+            //txtUsr_Password.Text = dgwUsuarios.CurrentRow.Cells["Contraseña"].Value.ToString();
         }
 
         private void datosDeUsuario_Enter(object sender, EventArgs e)
@@ -48,6 +71,9 @@ namespace Vistas
 
         private void FormUsuario_Load(object sender, EventArgs e)
         {
+            load_combo_roles();
+            load_Usuarios();
+            /**
             //Realiza la Conexion con la Base de Datos
             SqlConnection cn = new SqlConnection("Data Source=.\\SQLEXPRESS;AttachDbFilename='D:\\Documents\\01 - Proyectos From\\LPOO1_GRUPO6\\prestamosDB.mdf';Integrated Security=True;Connect Timeout=30;User Instance=True");
             //SqlConnection cn = new SqlConnection("Data Source=.\\SQLEXPRESS;AttachDbFilename='D:\\Documents\\01 - Proyectos From\\LPOO1_GRUPO6\\SistemaAlumnosDB.mdf';Integrated Security=True;Connect Timeout=30;User Instance=True");
@@ -72,7 +98,6 @@ namespace Vistas
 	        {
                 //comboBoxRol.Items.Add(dr["ALU_Nombre"]);
                 comboBoxRol.Items.Add(dr["cli_nombre"]);         
-
                 
 	        }
 
@@ -82,6 +107,7 @@ namespace Vistas
             // Cerrar la Base de Datos
             cn.Close();
             //cn2.Close();
+            */
         }
 
         private void textBoxNombreDeUsuario_TextChanged(object sender, EventArgs e)
@@ -89,7 +115,34 @@ namespace Vistas
 
         }
 
+        private void dgvUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
+        }
 
+        private void btnSearchUsuario_Click(object sender, EventArgs e)
+        {
+            if (textBuscar.Text != null)
+            {
+                dgvUsuarios.DataSource = TrabajarUsuario.search_usuarios(textBuscar.Text);
+            }
+            else 
+            {
+                load_Usuarios();
+            }
+
+        }
+
+        private void dgvUsuarios_CurrentCellChanged(object sender, EventArgs e)
+        {
+            if (dgvUsuarios.CurrentRow != null)
+            {
+                comboBoxRol.SelectedValue = dgvUsuarios.CurrentRow.Cells["rol_codigo"].Value.ToString();
+
+                textBoxNombreDeUsuario.Text = dgvUsuarios.CurrentRow.Cells["Usuario"].Value.ToString();
+                textBoxContraseña.Text = dgvUsuarios.CurrentRow.Cells["Contraseña"].Value.ToString();
+                textBoxApellidoNombre.Text = dgvUsuarios.CurrentRow.Cells["ApellidoNombre"].Value.ToString();
+            }
+        }
     }
 }

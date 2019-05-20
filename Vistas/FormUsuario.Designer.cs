@@ -38,7 +38,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.comboBoxRol = new System.Windows.Forms.ComboBox();
             this.buttonGuardar = new System.Windows.Forms.Button();
+            this.dgvUsuarios = new System.Windows.Forms.DataGridView();
+            this.btnSearchUsuario = new System.Windows.Forms.Button();
+            this.textBuscar = new System.Windows.Forms.TextBox();
             this.datosDeUsuario.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
             // datosDeUsuario
@@ -51,7 +55,7 @@
             this.datosDeUsuario.Controls.Add(this.labelNombredeUsuario);
             this.datosDeUsuario.Controls.Add(this.label1);
             this.datosDeUsuario.Controls.Add(this.comboBoxRol);
-            this.datosDeUsuario.Location = new System.Drawing.Point(36, 44);
+            this.datosDeUsuario.Location = new System.Drawing.Point(498, 69);
             this.datosDeUsuario.Name = "datosDeUsuario";
             this.datosDeUsuario.Size = new System.Drawing.Size(393, 239);
             this.datosDeUsuario.TabIndex = 0;
@@ -128,7 +132,7 @@
             // 
             // buttonGuardar
             // 
-            this.buttonGuardar.Location = new System.Drawing.Point(318, 311);
+            this.buttonGuardar.Location = new System.Drawing.Point(780, 333);
             this.buttonGuardar.Name = "buttonGuardar";
             this.buttonGuardar.Size = new System.Drawing.Size(75, 23);
             this.buttonGuardar.TabIndex = 1;
@@ -136,11 +140,41 @@
             this.buttonGuardar.UseVisualStyleBackColor = true;
             this.buttonGuardar.Click += new System.EventHandler(this.buttonGuardar_Click);
             // 
+            // dgvUsuarios
+            // 
+            this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUsuarios.Location = new System.Drawing.Point(12, 69);
+            this.dgvUsuarios.Name = "dgvUsuarios";
+            this.dgvUsuarios.Size = new System.Drawing.Size(459, 239);
+            this.dgvUsuarios.TabIndex = 2;
+            this.dgvUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsuarios_CellContentClick);
+            this.dgvUsuarios.CurrentCellChanged += new System.EventHandler(this.dgvUsuarios_CurrentCellChanged);
+            // 
+            // btnSearchUsuario
+            // 
+            this.btnSearchUsuario.Location = new System.Drawing.Point(591, 28);
+            this.btnSearchUsuario.Name = "btnSearchUsuario";
+            this.btnSearchUsuario.Size = new System.Drawing.Size(75, 23);
+            this.btnSearchUsuario.TabIndex = 3;
+            this.btnSearchUsuario.Text = "Buscar";
+            this.btnSearchUsuario.UseVisualStyleBackColor = true;
+            this.btnSearchUsuario.Click += new System.EventHandler(this.btnSearchUsuario_Click);
+            // 
+            // textBuscar
+            // 
+            this.textBuscar.Location = new System.Drawing.Point(12, 28);
+            this.textBuscar.Name = "textBuscar";
+            this.textBuscar.Size = new System.Drawing.Size(558, 20);
+            this.textBuscar.TabIndex = 4;
+            // 
             // FormUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(468, 368);
+            this.ClientSize = new System.Drawing.Size(915, 368);
+            this.Controls.Add(this.textBuscar);
+            this.Controls.Add(this.btnSearchUsuario);
+            this.Controls.Add(this.dgvUsuarios);
             this.Controls.Add(this.buttonGuardar);
             this.Controls.Add(this.datosDeUsuario);
             this.Name = "FormUsuario";
@@ -148,7 +182,9 @@
             this.Load += new System.EventHandler(this.FormUsuario_Load);
             this.datosDeUsuario.ResumeLayout(false);
             this.datosDeUsuario.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -164,5 +200,8 @@
         private System.Windows.Forms.TextBox textBoxContraseña;
         private System.Windows.Forms.TextBox textBoxNombreDeUsuario;
         private System.Windows.Forms.Button buttonGuardar;
+        private System.Windows.Forms.DataGridView dgvUsuarios;
+        private System.Windows.Forms.Button btnSearchUsuario;
+        private System.Windows.Forms.TextBox textBuscar;
     }
 }
